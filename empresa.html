@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <a href="https://lordicon.com/"></a>
+    <script src="scripts/cadastro.js"></script>
+    <title>Cadastro Empresa</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1></h1>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome da Empresa</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Qual o nome da sua Empresa?" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Email Oficial da Empresa" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="CNPJ">CNPJ</label>
+                        <input id="cnpj" type="number" name="cnpj" placeholder="CNPJ Oficial da Empresa" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="%">Porcentagem</label>
+                        <input id="valor" type="number" name="valor" placeholder="Qual a % será doada?" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Quantidade">Quantidade</label>
+                        <input id="Quantidade" type="number" name="Quantidade" placeholder="Quantos produtos deseja disponibilizar?" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Repetir Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Repita a senha anterior" required>
+                    </div>
+
+                    <div class="continue-button">
+                        <button onclick="exibirModal()">Cadastrar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+<div id="chatModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <h2 class="modalduv">Sua empresa foi cadastrada com sucesso!</h2>
+            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/lupuorrc.json"
+            trigger="hover"
+            colors="primary:#e83a30,secondary:#e8e230"
+            stroke="40"
+            style="width:150px;height:150px; margin-left: 50px;">
+        </lord-icon>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

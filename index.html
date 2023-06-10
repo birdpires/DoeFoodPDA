@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <title>DoeFood</title>
+    <script src="https://kit.fontawesome.com/3aa80303c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scripts/index.js"></script>
+</head>
+
+<header>
+<body>
+    <div id="logo">DoeFood</div>
+    <!--<h1><a href="../login">Faça o login</a> </h1>-->
+  <div>
+    <div class="search">
+      <div class="search-bar" id="search_bar">
+        <input type="text" placeholder="Pesquise no DoeFood...">
+      </div>
+      <a href="#" id="search_btn" onclick="search_bar_anim()">
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div>
+    <div class="cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <p>0</p>
+    </div>
+  </div>
+
+  <section class="main">
+    <a href="#" id="chat-icon" onclick="abrirChat()">
+        <i class="fa-regular fa-circle-question"></i>
+    </a>
+
+   <div id="chatModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2 class="onde">Saiba onde doaremos</h2> 
+            
+            <div class="duvida" id="duvida">
+            <p></p><input type="text" id="pergunta" placeholder="Digite a cidade..."></p> 
+                <div id="search-results"></div>
+                <i class="fa-solid fa-magnifying-glass" onclick="enviarPergunta('')"></i>
+            </div>
+        </div>
+    </div> 
+
+    <a href="#" class="chat-icon" onclick="abrirModal()">
+        <i class="fa-regular fa-circle-question"></i>
+    </a>        
+</section>
+</header>
+        <div class="main-content">
+            <section class="branco">
+                random line
+            </section> 
+            <section class="branco">
+                random line
+            </section> 
+
+            <h1>Com <span>DoeFood</span> fica f&aacute;cil doar.</h1>
+
+            <div class="slideshow-container">
+                <div class="slide">
+                  <img src="imagens/one.jpeg" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                  <img src="imagens/two.jpeg" alt="Imagem 2">
+                </div>
+                <div class="slide">
+                  <img src="imagens/three.jpeg" alt="Imagem 3">
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+              </div>
+              <section class="branco">
+                random line
+            </section> 
+            <section class="branco">
+                random line
+            </section> 
+
+            <h2>Conhe&ccedil;a mais sobre a gente:</h2>
+            <section class="branco">
+                random line
+            </section> 
+        </div>
+    </section>
+    <section class="branco">
+        random line
+    </section> 
+    <section class="branco">
+        random line
+    </section> 
+    <section class="branco">
+        random line
+    </section> 
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <section id="news">
+        <div class="direito"><a class="pag" href="#">Produtos</a></div><div class="esquerdo"> <a class="pag" href="informe.html">Projeto</a></div>
+        <section class="um">
+            <div class="news-tiles">
+                <article class="news-tile">
+                    <div class="food-tile">
+                        <img src="imagens/hamb1.jpg" alt="Hamb 1" width="500">
+                        <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>MacLanche&#33;</h4>
+                            <p>Pague apenas <b>R$7,50&#33;</b></p> <p>(50% do valor Original)</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="login.html">Partiu</a>
+                        </div>
+                      </div>
+                    </div>
+                </article>
+              <article class="news-tile">
+                <div class="food-tile">
+                    <img src="imagens/hamb2.jpg" alt="Hamb 1" width="500">
+                    <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Burguer King&#33;</h4>
+                            <p>Pague apenas <b>R$10,50&#33;</b></p> <p>(45% do valor Original)</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="individuo.html">Partiu</a>
+                        </div>
+                    </div>
+                </div>
+              </article>
+        </section>
+        <section class="um">
+            <div class="news-tiles">
+                <article class="news-tile">
+                    <div class="food-tile">
+                        <img src="imagens/hamb3.jpg" alt="Hamb 1" width="500">
+                        <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Rodizzios</h4>
+                            <p>Pague apenas <b>R$13,50&#33;</b></p> <p>(65% do valor Original)</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="../login">Partiu</a>
+                        </div>
+                      </div>
+                    </div>
+                </article>
+              <article class="news-tile">
+                <div class="food-tile">
+                    <img src="imagens/slide2.jpg" alt="Hamb 1" width="500">
+                    <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Giraffas</h4>
+                            <p>Pague apenas <b>R$8,00&#33;</b></p> <p>(50% do valor Original)</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="../login">Partiu</a>
+                        </div>
+                    </div>
+                </div>
+              </article>
+        </section>
+
+        <section class="um">
+            <div class="news-tiles">
+                <article class="news-tile">
+                    <div class="food-tile">
+                        <img src="imagens/slide4.jpg" alt="Hamb 5" width="500">
+                        <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Combo do Rafa</h4>
+                            <p>Pague apenas <b>R$13,70&#33;</b></p> <p>(55% do valor Original)</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="../login">Partiu</a>
+                        </div>
+                      </div>
+                    </div>
+                </article>
+              <article class="news-tile">
+                <div class="food-tile">
+                    <img src="imagens/slide5.jpg" alt="Hamb 1" width="500">
+                    <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Marcelo's Flavor</h4>
+                            <p>Pague apenas <b>R$10,00&#33;</b></p> <p>(60% do valor Original)</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="login.html">Partiu</a>
+                        </div>
+                    </div>
+                </div>
+              </article>
+        </section>
+
+        <section class="um">
+            <div class="news-tiles">
+                <article class="news-tile">
+                    <div class="food-tile">
+                        <img src="imagens/hamb5.jpg" alt="Hamb 5" width="500">
+                        <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Daniel Burguer</h4>
+                            <p>Pague apenas <b>R$15,00&#33;</b></p> <p>(75% do valor Original)</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="../login">Partiu</a>
+                        </div>
+                      </div>
+                    </div>
+                </article>
+              <article class="news-tile">
+                <div class="food-tile">
+                    <img src="imagens/hmab7.jpg" alt="Hamb 1" width="500">
+                    <div class="food-tile-container">
+                        <div class="food-tile-container-info">
+                            <h4>Cleber's Food</h4>
+                            <p>Pague apenas <b>R$9,99&#33;</b></p> <p>(50% do valor Original)</p>
+                        </div>
+                        <div class="food-tile-container-action">
+                            <a href="login.html">Partiu</a>
+                        </div>
+                    </div>
+                </div>
+              </article>
+        </section>
+            </div>
+    </section>
+    <section class="branco">
+        random line
+    </section> 
+    <section class="branco">
+        random line
+    </section> 
+    <section class="branco">
+        random line
+    </section> 
+    <section class="branco">
+        random line
+    </section> 
+     <section class="branco">
+                random line
+     </section> 
+     <section class="branco">
+        random line
+     </section> 
+     <section class="branco">
+        random line
+      </section> 
+            <footer>
+                <div class="container-footer">
+                    <div class="row-footer">
+                        <!-- footer col-->
+                        <div class="footer-col">
+                            <h4>Shoodi</h4>
+                            <ul>
+                                <li><a href="#"> Quem somos </a></li>
+                                <li><a href=""> nossos serviços </a></li>
+                                <li><a href=""> política de privacidade </a></li>
+                                <li><a href=""> programa de afiliados</a></li>
+                            </ul>
+                        </div>
+                      
+                        <div class="footer-col">
+                            <h4>Obter ajuda</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Transporte</a></li>
+                                <li><a href="#">devoluções</a></li>
+                                <li><a href="#">Status De Pedido</a></li>
+                                <li><a href="#">Opções De Pagamento</a></li>
+                            </ul>
+                        </div>
+                
+                        <div class="footer-col">
+                            <h4> atendemineto online</h4>
+                            <ul>
+                            
+                                <li><a href="#">Acessoria</a></li>
+                                <li><a href="#">Perguntas frequentes</a></li>
+                            </ul>
+                        </div>
+                      
+                        <div class="footer-col">
+                            <h4>Inscreva-se</h4>
+                            <div class="form-sub">
+                                <form>
+                                    <input type="email" placeholder="Digite o seu e-mail" required>
+                                    <button>Confirme</button>
+                                </form>
+                            </div>
+        
+                            <div class="medias-socias">
+                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                <a href="#"> <i class="fa fa-instagram"></i> </a>
+                                <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>

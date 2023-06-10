@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--{% load static %}-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoeFood</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scripts/index.js"></script>
+    
+</head>
+
+<header>
+    <body>
+        <div id="logo">DoeFood</div>
+        <!--<h1><a href="../login">Faça o login</a> </h1>-->
+      <div>
+        <div class="search">
+          <div class="search-bar" id="search_bar">
+            <input type="text" placeholder="Pesquise no DoeFood...">
+          </div>
+          <a href="#" id="search_btn" onclick="search_bar_anim()">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>0</p>
+        </div>
+      </div>
+    
+      <section class="main">
+        <a href="#" id="chat-icon" onclick="abrirChat()">
+            <i class="fa-regular fa-circle-question"></i>
+        </a>
+    
+       <div id="chatModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="fecharModal()">&times;</span>
+                <h2 class="onde">Saiba onde doaremos</h2> 
+                
+                <div class="duvida" id="duvida">
+                    <input type="text" id="pergunta" placeholder="Digite uma cidade...">
+                    <div id="search-results"></div>
+                    <i class="fa-solid fa-magnifying-glass" onclick="enviarPergunta('')"></i>
+                </div>
+            </div>
+        </div> 
+    
+        <a href="#" class="chat-icon" onclick="abrirModal()">
+            <i class="fa-regular fa-circle-question"></i>
+        </a>        
+    </section>
+    </header>
+            <div class="main-content">
+                <section class="branco">
+                    random line
+                </section> 
+                <section class="branco">
+                    random line
+                </section> 
+    
+                <h1>Com <span>DoeFood</span> fica f&aacute;cil doar.</h1>
+    
+                <div class="slideshow-container">
+                    <div class="slide">
+                      <img src="imagens/one.jpeg" alt="Imagem 1">
+                    </div>
+                    <div class="slide">
+                      <img src="imagens/two.jpeg" alt="Imagem 2">
+                    </div>
+                    <div class="slide">
+                      <img src="imagens/three.jpeg" alt="Imagem 3">
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                  </div>
+                  <section class="branco">
+                    random line
+                </section> 
+                <section class="branco">
+                    random line
+                </section> 
+    
+                <h2>Conhe&ccedil;a mais sobre a gente:</h2>
+                <section class="branco">
+                    random line
+                </section> 
+            </div>
+        </section>
+        <section class="branco">
+            random line
+        </section> 
+        <section class="branco">
+            random line
+        </section> 
+        <section class="branco">
+            random line
+        </section> 
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+    
+        <section id="news">
+            <div class="direito"><a class="pag" href="#">Produtos</a></div><div class="esquerdo"> <a class="pag" href="informe.html">Projeto</a></div>
+        </section>
+    
+        <section class="historia">
+            <div><h1>ENTENDENDO QUEM SOMOS</h1>
+            <img src="imagens/gifinforme.gif" alt="gif"></div>
+            <div class="informe">
+               <p><b> Bem-vindo ao DoeFood: onde alimentamos a solidariedade!</b></p> 
+
+                Na DoeFood, estamos empenhados em combater a fome e ajudar quem mais precisa. Nosso principal objetivo é arrecadar cada vez mais doações em todo o país, conectando grandes empresas e pessoas generosas por meio de nossa plataforma inovadora.
+                Sabemos que a fome é uma realidade triste e preocupante e acreditamos que todos têm o direito básico a uma alimentação nutritiva e de qualidade. Por isso, firmamos parcerias estratégicas com empresas de renome, que compartilham  nossa visão de um mundo sem fome, para levar comida a quem mais precisa. 
+                Nossa plataforma online é simples e eficiente. Com isso, os parceiros podem produzir alimentos que são cuidadosamente distribuídos para organizações e instituições de caridade em todo o país. Essas doações têm um impacto direto e imediato na vida de quem luta diariamente com a comida. 
+                Além disso, a DoeFood também engaja a comunidade, permitindo que pessoas generosas e atenciosas participem diretamente do combate à fome. Por meio de nossa plataforma, qualquer pessoa pode fazer doações individuais e contribuir com a causa, ajudando a alimentar famílias e comunidades saudáveis. 
+            </div>
+            <div><h1>ENTENDENDO COMO FUNCIONA</h1>
+                <img src="imagens/gif2.gif" alt="gif2">
+            </div>
+            <div class="informe">
+            <p><b> Um projeto movido onde VOCÊ e empresas privadas se tornam um só!</b></p>
+            Ao acessar nosso site você fará uma doação como outra qualquer, o diferencial é que juntamente a você, uma empresa privada de grande porte também estará doando!!
+               Escolha um dos produtos, que fará a alegria e matará a fome de alguém, e então o compre pagando apenas uma porcentagem do valor total. O restante da Porcentagem será paga pela empresa pelo qual o seu produto pertence!
+               Venha fazer parte dessa jornada em busca da alimentação e faça alguém feliz!!
+            <p class="branco">EU SOU:</p>
+            <p class="branco">EU SOU:</p>
+            <p>EU SOU:</p>
+           <p class="empresa"> <a href="empresa.html"><button type="button"><b>EMPRESA</b></button></a> 
+            <a href="index.html"><button type="button"><b>INDIVIDUO</b></button></a> </p>
+            </div>
+            <p class="branco">EU SOU:</p>
+
+        </section>
+        <footer>
+            <div class="container-footer">
+                <div class="row-footer">
+                    <!-- footer col-->
+                    <div class="footer-col">
+                        <h4>Shoodi</h4>
+                        <ul>
+                            <li><a href="#"> Quem somos </a></li>
+                            <li><a href=""> nossos serviços </a></li>
+                            <li><a href=""> política de privacidade </a></li>
+                            <li><a href=""> programa de afiliados</a></li>
+                        </ul>
+                    </div>
+                  
+                    <div class="footer-col">
+                        <h4>Obter ajuda</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Transporte</a></li>
+                            <li><a href="#">devoluções</a></li>
+                            <li><a href="#">Status De Pedido</a></li>
+                            <li><a href="#">Opções De Pagamento</a></li>
+                        </ul>
+                    </div>
+            
+                    <div class="footer-col">
+                        <h4> atendemineto online</h4>
+                        <ul>
+                        
+                            <li><a href="#">Acessoria</a></li>
+                            <li><a href="#">Perguntas frequentes</a></li>
+                        </ul>
+                    </div>
+                  
+                    <div class="footer-col">
+                        <h4>Inscreva-se</h4>
+                        <div class="form-sub">
+                            <form>
+                                <input type="email" placeholder="Digite o seu e-mail" required>
+                                <button>Confirme</button>
+                            </form>
+                        </div>
+    
+                        <div class="medias-socias">
+                            <a href="#"> <i class="fa fa-facebook"></i> </a>
+                            <a href="#"> <i class="fa fa-instagram"></i> </a>
+                            <a href="#"> <i class="fa fa-twitter"></i> </a>
+                            <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </footer>
+      
+</body>
+</html>
